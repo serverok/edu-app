@@ -12,8 +12,15 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+
+      - name: Debug inputs
+        run: |
+          echo "FTP Host: server24.hostonnet.com"
+          echo "FTP User: ${{ secrets.FTP_USERNAME != '' ? '***' : 'empty' }}"
+          echo "FTP Password: ${{ secrets.FTP_PASSWORD != '' ? '***' : 'empty' }}"
+
       - name: FTP Uploader
-        uses: zinh/ftp-uploader-action@v0.5
+        uses: zinh/ftp-uploader-action@v1.0.0
         with:
           ftpHostname: server24.hostonnet.com
           ftpUsername: ${{ secrets.FTP_USERNAME }}
