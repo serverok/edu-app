@@ -1,0 +1,9 @@
+ - name: FTP Uploader
+   uses: zinh/ftp-uploader-action@v0.5
+   with:
+    ftpHostname: server24.hostonnet.com
+    ftpUsername: edudemohon
+    ftpPassword: ukaWFoohub9o
+    src: .
+    dest: /public_html/
+    dryRun: false
