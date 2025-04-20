@@ -13,7 +13,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
       - name: FTP Uploader
-        uses: zinh/ftp-uploader-action@v1.0.0
+        uses: genietim/ftp-action@releases/v4
         with:
           ftpHostname: server24.hostonnet.com
           ftpUsername: ${{ secrets.FTP_USERNAME }}
