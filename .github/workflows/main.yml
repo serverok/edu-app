@@ -6,35 +6,12 @@ on:
       - main
 
 jobs:
-  verify-secret:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check FTP Username
-        id: check-secret
-        run: |
-          echo "::set-output name=ftp_username::${{ secrets.FTP_USERNAME }}"
-      - name: Print FTP Username
-        run: |
-          echo "FTP username is set: ${{ steps.check-secret.outputs.ftp_username }}"
   deploy:
     runs-on: ubuntu-latest
     environment: production 
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-
-      - name: Debug FTP Username
-        run: |
-          if [ -z "${{ secrets.FTP_USERNAME }}" ]; then
-            echo "FTP_USERNAME is not set or is empty."
-            exit 1
-          else
-            echo "FTP_USERNAME is set."
-          fi
-
-      - name: Enable Debugging
-        run: echo "DEBUG=true" >> $GITHUB_ENV
-
       - name: FTP Uploader
         uses: zinh/ftp-uploader-action@v0.5
         with:
