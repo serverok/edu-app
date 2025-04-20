@@ -15,9 +15,8 @@ jobs:
       - name: FTP Uploader
         uses: genietim/ftp-action@releases/v4
         with:
-          ftpHostname: server24.hostonnet.com
-          ftpUsername: ${{ secrets.FTP_USERNAME }}
-          ftpPassword: ${{ secrets.FTP_PASSWORD }}
-          src: .
-          dest: /public_html/
-          dryRun: false
+          host: server24.hostonnet.com
+          user: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          localDir: "dist"
+          remoteDir: /public_html/
