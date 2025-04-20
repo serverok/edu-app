@@ -9,7 +9,6 @@ include 'includes/header.php';
             <div class="step active">1</div>
             <div class="step">2</div>
             <div class="step">3</div>
-            <div class="step">4</div>
             <div class="active-progress" style="width: 0%"></div>
         </div>
     </div>
