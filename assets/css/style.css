@@ -1,0 +1,267 @@
+/* Main Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.logo {
+    font-weight: 700;
+    color: #333;
+}
+
+.main-container {
+    min-height: 70vh;
+}
+
+/* Form Styles */
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.step-heading {
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.step-subheading {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.highlight {
+    color: #00c853;
+    font-weight: 600;
+}
+
+/* Country Selection */
+.country-card {
+    border: 2px solid #e9ecef;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.country-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.country-card.selected {
+    border-color: #00c853;
+    background-color: rgba(0, 200, 83, 0.05);
+}
+
+.country-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+/* Budget Selection */
+.budget-option {
+    border: 2px solid #e9ecef;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.budget-option:hover {
+    border-color: #00c853;
+    background-color: rgba(0, 200, 83, 0.05);
+}
+
+.budget-option.selected {
+    border-color: #00c853;
+    background-color: rgba(0, 200, 83, 0.05);
+}
+
+.budget-option .radio-custom {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+}
+
+.budget-option.selected .radio-custom {
+    border-color: #00c853;
+}
+
+.budget-option.selected .radio-custom:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background: #00c853;
+    border-radius: 50%;
+}
+
+/* Personal Form */
+.form-control {
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+/* Results Page */
+.university-card {
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.university-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.university-image {
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+}
+
+.university-details {
+    padding: 20px;
+}
+
+.university-name {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.university-country {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.university-country img {
+    width: 24px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.university-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-label {
+    font-size: 12px;
+    color: #666;
+}
+
+.stat-value {
+    font-weight: 600;
+}
+
+/* Action Button */
+.action-btn {
+    background-color: #00c853;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.action-btn:hover {
+    background-color: #009624;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Progress Bar */
+.progress-container {
+    margin-bottom: 40px;
+}
+
+.progress-steps {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.progress-steps:before {
+    content: '';
+    position: absolute;
+    top: 14px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ddd;
+    z-index: 0;
+}
+
+.step {
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ddd;
+    font-weight: 600;
+    color: #777;
+}
+
+.step.active {
+    border-color: #00c853;
+    background: #00c853;
+    color: #fff;
+}
+
+.step.completed {
+    border-color: #00c853;
+    background: #00c853;
+    color: #fff;
+}
+
+.active-progress {
+    position: absolute;
+    top: 14px;
+    left: 0;
+    height: 2px;
+    background: #00c853;
+    z-index: 0;
+    transition: width 0.3s ease;
+}
