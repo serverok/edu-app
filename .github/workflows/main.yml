@@ -15,7 +15,7 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: server24.hostonnet.com
+          server: 51.68.251.120
           port: 21
           username: edudemohon
           password: ${{ secrets.FTP_PASSWORD }}
