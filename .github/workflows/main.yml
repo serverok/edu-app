@@ -12,6 +12,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Enable Debugging
+        run: echo "DEBUG=true" >> $GITHUB_ENV
+
       - name: FTP Uploader
         uses: zinh/ftp-uploader-action@v0.5
         with:
