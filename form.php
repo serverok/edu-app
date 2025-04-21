@@ -99,10 +99,7 @@ include 'includes/header.php';
         
         <div class="text-center mt-4">
             <div class="row">
-                <div class="col-6">
-                    <a href="budget.php" class="btn btn-outline-secondary w-100">Back</a>
-                </div>
-                <div class="col-6">
+                <div class="col-12">
                     <button type="submit" class="action-btn w-100">Find Best University</button>
                 </div>
             </div>

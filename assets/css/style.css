@@ -74,6 +74,16 @@ body {
     margin-bottom: 15px;
 }
 
+/* Country Code Select Styling */
+.country-code-select {
+    width: 120px;
+}
+
+/* Adjust input group spacing */
+.input-group .country-code-select {
+    margin-right: 8px;
+}
+
 /* Budget Selection */
 .budget-option {
     border: 2px solid #e9ecef;
