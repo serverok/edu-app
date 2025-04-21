@@ -58,16 +58,56 @@ include 'includes/header.php';
         <div class="mb-3">
             <label for="mobile" class="form-label">Mobile</label>
             <div class="input-group">
-                <select class="form-select" id="countryCode" name="countryCode" required>
-                    <option value="+91" selected>🇮🇳 +91 (India)</option>
-                    <option value="+1">🇺🇸 +1 (USA)</option>
-                    <option value="+44">🇬🇧 +44 (UK)</option>
-                    <option value="+61">🇦🇺 +61 (Australia)</option>
-                    <option value="+81">🇯🇵 +81 (Japan)</option>
-                    <option value="+86">🇨🇳 +86 (China)</option>
-                    <option value="+49">🇩🇪 +49 (Germany)</option>
-                    <option value="+33">🇫🇷 +33 (France)</option>
-                    <option value="+7">🇷🇺 +7 (Russia)</option>
+                <select class="form-select country-code-select" id="countryCode" name="countryCode" required>
+                    <option value="">Select Country...</option>
+                    <option value="+91" selected>🇮🇳 India (+91)</option>
+                    <option value="+1">🇺🇸 United States (+1)</option>
+                    <option value="+44">🇬🇧 United Kingdom (+44)</option>
+                    <option value="+61">🇦🇺 Australia (+61)</option>
+                    <option value="+81">🇯🇵 Japan (+81)</option>
+                    <option value="+86">🇨🇳 China (+86)</option>
+                    <option value="+49">🇩🇪 Germany (+49)</option>
+                    <option value="+33">🇫🇷 France (+33)</option>
+                    <option value="+7">🇷🇺 Russia (+7)</option>
+                    <option value="+39">🇮🇹 Italy (+39)</option>
+                    <option value="+34">🇪🇸 Spain (+34)</option>
+                    <option value="+49">🇩🇪 Germany (+49)</option>
+                    <option value="+41">🇨🇭 Switzerland (+41)</option>
+                    <option value="+31">🇳🇱 Netherlands (+31)</option>
+                    <option value="+45">🇩🇰 Denmark (+45)</option>
+                    <option value="+47">🇳🇴 Norway (+47)</option>
+                    <option value="+46">🇸🇪 Sweden (+46)</option>
+                    <option value="+358">🇫🇮 Finland (+358)</option>
+                    <option value="+353">🇮🇪 Ireland (+353)</option>
+                    <option value="+352">🇱🇺 Luxembourg (+352)</option>
+                    <option value="+351">🇵🇹 Portugal (+351)</option>
+                    <option value="+357">🇨🇾 Cyprus (+357)</option>
+                    <option value="+359">🇧🇬 Bulgaria (+359)</option>
+                    <option value="+380">🇺🇦 Ukraine (+380)</option>
+                    <option value="+381">🇷🇸 Serbia (+381)</option>
+                    <option value="+382">🇲🇪 Montenegro (+382)</option>
+                    <option value="+383">�� Kosovo (+383)</option>
+                    <option value="+385">🇭�🇷 Croatia (+385)</option>
+                    <option value="+386">🇸🇮 Slovenia (+386)</option>
+                    <option value="+387">🇧🇦 Bosnia and Herzegovina (+387)</option>
+                    <option value="+389">🇲🇰 North Macedonia (+389)</option>
+                    <option value="+370">🇱🇹 Lithuania (+370)</option>
+                    <option value="+371">🇱🇻 Latvia (+371)</option>
+                    <option value="+372">🇪🇪 Estonia (+372)</option>
+                    <option value="+373">🇲🇩 Moldova (+373)</option>
+                    <option value="+374">🇦🇲 Armenia (+374)</option>
+                    <option value="+375">🇧🇾 Belarus (+375)</option>
+                    <option value="+376">🇦🇩 Andorra (+376)</option>
+                    <option value="+377">🇲🇨 Monaco (+377)</option>
+                    <option value="+378">🇸🇲 San Marino (+378)</option>
+                    <option value="+379">�� Vatican City (+379)</option>
+                    <option value="+37">🇦🇱 Albania (+37)</option>
+                    <option value="+38">🇦🇹 Austria (+38)</option>
+                    <option value="+39">🇧🇪 Belgium (+39)</option>
+                    <option value="+40">🇧🇦 Bosnia and Herzegovina (+40)</option>
+                    <option value="+41">🇨🇿 Czech Republic (+41)</option>
+                    <option value="+42">🇭🇺 Hungary (+42)</option>
+                    <option value="+43">🇮🇸 Iceland (+43)</option>
                 </select>
                 <input type="text" class="form-control" id="mobile" name="mobile" required>
             </div>
