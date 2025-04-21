@@ -81,15 +81,9 @@ if (in_array($_SESSION['country'], $asianCountries)) {
         
         <div class="text-center mt-4">
             <div class="row">
-                <div class="col-6">
-                    <a href="index.php" class="btn btn-outline-secondary w-100">Back</a>
-                </div>
-                <div class="col-6">
+                <div class="col-12">
                     <button type="submit" class="action-btn w-100" id="nextBtn" disabled>Next</button>
                 </div>
-            </div>
-            <div class="mt-3 text-center">
-                <small>2/3</small>
             </div>
         </div>
     </form>
@@ -103,8 +97,7 @@ $(document).ready(function() {
     });
     
     // Set progress bar width
-    $('.active-progress').css('width', '33.33%');
-});
+    $('.active-progress').css('width', '50%');});
 </script>
 
 <?php include 'includes/footer.php'; ?>

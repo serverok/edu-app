@@ -29,7 +29,7 @@ include 'includes/header.php';
             <div class="step completed">1</div>
             <div class="step completed">2</div>
             <div class="step active">3</div>
-            <div class="active-progress" style="width: 75.66%"></div>
+            <div class="active-progress" style="width: 90%"></div>
         </div>
     </div>
 
@@ -78,11 +78,12 @@ include 'includes/header.php';
             <label for="education" class="form-label">Education</label>
             <select class="form-select" id="education" name="education" required>
                 <option value="" selected disabled>Education...</option>
-                <option value="High School">High School</option>
-                <option value="Bachelor's Degree">Bachelor's Degree</option>
-                <option value="Master's Degree">Master's Degree</option>
-                <option value="Doctorate">Doctorate</option>
-                <option value="Other">Other</option>
+                <option value="NEET Preparation">NEET Preparation</option>
+                <option value="12th Bio Science">12th Bio Science</option>
+                <option value="12th Computer Science">12th Computer Science</option>
+                <option value="11th">11th </option>
+                <option value="10th">10th</option>
+                <option value="other">other</option>
             </select>
             <small id="educationError" class="text-danger"></small>
         </div>
