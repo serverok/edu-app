@@ -12,16 +12,6 @@ if ($_SERVER["REQUEST_METHOD"] != "POST") {
     exit;
 }
 
-// Verify reCAPTCHA
-$recaptchaSecretKey = getenv('RECAPTCHA_SECRET_KEY');
-$recaptchaResponse = $_POST['g-recaptcha-response'] ?? '';
-
-if (empty($recaptchaResponse)) {
-    $_SESSION['error'] = "Please verify that you are not a robot.";
-    header("Location: form.php");
-    exit;
-}
-
 // Validate form data - using modern PHP 8+ sanitization
 $name = isset($_POST['name']) ? htmlspecialchars($_POST['name'], ENT_QUOTES, 'UTF-8') : '';
 $email = isset($_POST['email']) ? filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL) : '';
@@ -88,6 +78,3 @@ try {
     header("Location: form.php");
     exit;
 }
-
-// No need to close PDO connection explicitly
-?>
