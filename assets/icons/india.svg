@@ -1,34 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225 150">
-  <rect width="225" height="50" fill="#FF9933"/>
-  <rect width="225" height="50" y="50" fill="#FFFFFF"/>
-  <rect width="225" height="50" y="100" fill="#138808"/>
-  <circle cx="112.5" cy="75" r="20" fill="#000080"/>
-  <circle cx="112.5" cy="75" r="17.5" fill="#FFFFFF"/>
-  <circle cx="112.5" cy="75" r="3.5" fill="#000080"/>
-  <g id="spokes">
-    <line x1="112.5" y1="75" x2="112.5" y2="57.5" stroke="#000080" stroke-width="1"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="640" height="480" id="india">
+  <path fill="#f93" d="M0 0h640v160H0z"></path>
+  <path fill="#fff" d="M0 160h640v160H0z"></path>
+  <path fill="#128807" d="M0 320h640v160H0z"></path>
+  <g transform="matrix(3.2 0 0 3.2 320 240)">
+    <circle r="20" fill="#008"></circle>
+    <circle r="17.5" fill="#fff"></circle>
+    <circle r="3.5" fill="#008"></circle>
+    <g id="d">
+      <g id="c">
+        <g id="b">
+          <g id="a" fill="#008">
+            <circle r=".875" transform="rotate(7.5 -8.75 133.5)"></circle>
+            <path d="M0 17.5.6 7 0 2l-.6 5L0 17.5z"></path>
+          </g>
+          <use xlink:href="#a" width="100%" height="100%" transform="rotate(15)"></use>
+        </g>
+        <use xlink:href="#b" width="100%" height="100%" transform="rotate(30)"></use>
+      </g>
+      <use xlink:href="#c" width="100%" height="100%" transform="rotate(60)"></use>
+    </g>
+    <use xlink:href="#d" width="100%" height="100%" transform="rotate(120)"></use>
+    <use xlink:href="#d" width="100%" height="100%" transform="rotate(-120)"></use>
   </g>
-  <use xlink:href="#spokes" transform="rotate(15,112.5,75)"/>
-  <use xlink:href="#spokes" transform="rotate(30,112.5,75)"/>
-  <use xlink:href="#spokes" transform="rotate(45,112.5,75)"/>
-  <use xlink:href="#spokes" transform="rotate(60,112.5,75)"/>
-  <use xlink:href="#spokes" transform="rotate(75,112.5,75)"/>
-  <use xlink:href="#spokes" transform="rotate(90,112.5,75)"/>
-  <use xlink:href="#spokes" transform="rotate(105,112.5,75)"/>
-  <use xlink:href="#spokes" transform="rotate(120,112.5,75)"/>
-  <use xlink:href="#spokes" transform="rotate(135,112.5,75)"/>
-  <use xlink:href="#spokes" transform="rotate(150,112.5,75)"/>
-  <use xlink:href="#spokes" transform="rotate(165,112.5,75)"/>
-  <use xlink:href="#spokes" transform="rotate(180,112.5,75)"/>
-  <use xlink:href="#spokes" transform="rotate(195,112.5,75)"/>
-  <use xlink:href="#spokes" transform="rotate(210,112.5,75)"/>
-  <use xlink:href="#spokes" transform="rotate(225,112.5,75)"/>
-  <use xlink:href="#spokes" transform="rotate(240,112.5,75)"/>
-  <use xlink:href="#spokes" transform="rotate(255,112.5,75)"/>
-  <use xlink:href="#spokes" transform="rotate(270,112.5,75)"/>
-  <use xlink:href="#spokes" transform="rotate(285,112.5,75)"/>
-  <use xlink:href="#spokes" transform="rotate(300,112.5,75)"/>
-  <use xlink:href="#spokes" transform="rotate(315,112.5,75)"/>
-  <use xlink:href="#spokes" transform="rotate(330,112.5,75)"/>
-  <use xlink:href="#spokes" transform="rotate(345,112.5,75)"/>
 </svg>
