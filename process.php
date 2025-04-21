@@ -22,16 +22,6 @@ if (empty($recaptchaResponse)) {
     exit;
 }
 
-// Verify the reCAPTCHA response with Google's API
-$recaptchaVerify = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$recaptchaSecretKey}&response={$recaptchaResponse}");
-$recaptchaData = json_decode($recaptchaVerify);
-
-if (!$recaptchaData->success) {
-    $_SESSION['error'] = "reCAPTCHA verification failed. Please try again.";
-    header("Location: form.php");
-    exit;
-}
-
 // Validate form data - using modern PHP 8+ sanitization
 $name = isset($_POST['name']) ? htmlspecialchars($_POST['name'], ENT_QUOTES, 'UTF-8') : '';
 $email = isset($_POST['email']) ? filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL) : '';

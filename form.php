@@ -96,11 +96,6 @@ include 'includes/header.php';
         <input type="hidden" name="country" value="<?php echo $_SESSION['country']; ?>">
         <input type="hidden" name="budget" value="<?php echo $_SESSION['budget']; ?>">
         
-        <div class="mb-4">
-            <div class="g-recaptcha" data-sitekey="<?php echo $recaptchaSiteKey; ?>"></div>
-            <small id="recaptchaError" class="text-danger"></small>
-        </div>
-        
         <div class="text-center mt-4">
             <div class="row">
                 <div class="col-6">
