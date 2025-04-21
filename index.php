@@ -30,32 +30,32 @@ include 'includes/header.php';
             </div>
             <div class="col-md-4 mb-4">
                 <div class="country-card" data-country="Russia">
-                    <img src="assets/icons/russia.svg" alt="Russia" class="country-icon">
-                    <h4>Russia</h4>
+                    <img src="assets/icons/uk.svg" alt="UK" class="country-icon">
+                    <h4>UK</h4>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="country-card" data-country="Uzbekistan">
-                    <img src="assets/icons/uzbekistan.svg" alt="Uzbekistan" class="country-icon">
-                    <h4>Uzbekistan</h4>
+                <div class="country-card" data-country="Germany">
+                    <img src="assets/icons/germany.svg" alt="Germany" class="country-icon">
+                    <h4>Germany</h4>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="country-card" data-country="Georgia">
-                    <img src="assets/icons/georgia.svg" alt="Georgia" class="country-icon">
-                    <h4>Georgia</h4>
+                <div class="country-card" data-country="USA">
+                    <img src="assets/icons/usa.svg" alt="USA" class="country-icon">
+                    <h4>USA</h4>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="country-card" data-country="Romania">
-                    <img src="assets/icons/romania.svg" alt="Romania" class="country-icon">
-                    <h4>Romania</h4>
+                <div class="country-card" data-country="UAE">
+                    <img src="assets/icons/uae.svg" alt="UAE" class="country-icon">
+                    <h4>UAE</h4>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="country-card" data-country="Bulgaria">
-                    <img src="assets/icons/bulgaria.svg" alt="Bulgaria" class="country-icon">
-                    <h4>Bulgaria</h4>
+                <div class="country-card" data-country="Other">
+                    <img src="assets/icons/other.svg" alt="Other" class="country-icon">
+                    <h4>Other</h4>
                 </div>
             </div>
         </div>
