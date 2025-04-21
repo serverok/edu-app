@@ -47,7 +47,7 @@ if ($is_logged_in) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard - 4inDegree</title>
+    <title>Admin Dashboard - Educart</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -85,7 +85,7 @@ if ($is_logged_in) {
         <?php if (!$is_logged_in): ?>
             <!-- Login Form -->
             <div class="login-container">
-                <h2 class="text-center mb-4">4in<span class="text-success">Degree</span> Admin</h2>
+                <h2 class="text-center mb-4">Edu<span class="text-success">Cart</span> Admin</h2>
                 <?php if (isset($login_error)): ?>
                     <div class="alert alert-danger"><?php echo $login_error; ?></div>
                 <?php endif; ?>
@@ -107,7 +107,7 @@ if ($is_logged_in) {
             <!-- Admin Dashboard -->
             <div class="admin-container">
                 <div class="d-flex justify-content-between align-items-center mb-4">
-                    <h2>4in<span class="text-success">Degree</span> Admin Dashboard</h2>
+                    <h2>Edu<span class="text-success">Cart</span> Admin Dashboard</h2>
                     <a href="?logout=1" class="btn btn-outline-danger"><i class="fas fa-sign-out-alt"></i> Logout</a>
                 </div>
                 

@@ -1,7 +1,7 @@
     </div>
     <footer class="py-4 bg-light mt-5">
         <div class="container text-center">
-            <p class="mb-0">&copy; <?php echo date('Y'); ?> EduSpace. All rights reserved.</p>
+            <p class="mb-0">&copy; <?php echo date('Y'); ?> EduCart. Designed By HostOnNet. All rights reserved.</p>
         </div>
     </footer>
 
