@@ -15,7 +15,9 @@ include 'includes/header.php';
         </div>
     </div>
 
-    <h2 class="step-heading">Choose your dream destination</h2>
+    <h2 class="step-heading">Choose your dream <br>
+    destinations to work as <br>
+    a Doctor </h2>
     <p class="step-subheading">Select a country to continue</p>
 
     <form action="budget.php" method="post">
