@@ -169,88 +169,80 @@ if (empty($universities)) {
 ?>
 
 <div class="form-container">
-    <div class="progress-container">
-        <div class="progress-steps">
-            <div class="step completed">1</div>
-            <div class="step completed">2</div>
-            <div class="step completed">3</div>
-            <div class="step active">4</div>
-            <div class="active-progress" style="width: 100%"></div>
-        </div>
-    </div>
 
-    <h2 class="step-heading">Here's your</h2>
-    <h2 class="step-heading">Top recommendations</h2>
-    <p class="step-subheading">These universities are listed in WHO, accredited by ECFMG, and follows every norms of NMC Guidelines. So, you are able to work in UK</p>
 
-    <?php if (isset($_SESSION['success'])): ?>
-        <div class="alert alert-success mb-4">
-            <?php echo $_SESSION['success']; unset($_SESSION['success']); ?>
-        </div>
-    <?php endif; ?>
+    <div class="container-fluid px-4">
+        <h2 class="step-heading">Here's your</h2>
+        <h2 class="step-heading">Top recommendations</h2>
+        <p class="step-subheading">These universities are listed in WHO, accredited by ECFMG, and follows every norms of NMC Guidelines. So, you are able to work in UK</p>
 
-    <?php if (isset($_SESSION['warning'])): ?>
-        <div class="alert alert-warning mb-4">
-            <?php echo $_SESSION['warning']; unset($_SESSION['warning']); ?>
-        </div>
-    <?php endif; ?>
+        <?php if (isset($_SESSION['success'])): ?>
+            <div class="alert alert-success mb-4">
+                <?php echo $_SESSION['success']; unset($_SESSION['success']); ?>
+            </div>
+        <?php endif; ?>
 
-    <div class="row">
-        <?php foreach($universities as $university): ?>
-        <div class="col-md-4 mb-4">
-            <div class="university-card">
-                <div class="university-image" style="background-color: #f0f0f0; display: flex; align-items: center; justify-content: center;">
-                    <h3><?php echo $university['name']; ?></h3>
-                </div>
-                <div class="university-details">
-                    <h5 class="university-name"><?php echo $university['name']; ?></h5>
-                    <div class="university-country">
-                        <img src="assets/icons/<?php echo $university['flag']; ?>" alt="<?php echo $university['country']; ?>">
-                        <?php echo $university['country']; ?>
+        <?php if (isset($_SESSION['warning'])): ?>
+            <div class="alert alert-warning mb-4">
+                <?php echo $_SESSION['warning']; unset($_SESSION['warning']); ?>
+            </div>
+        <?php endif; ?>
+
+        <div class="row g-4">
+            <?php foreach($universities as $university): ?>
+            <div class="col-12 col-lg-4 mb-4">
+                <div class="university-card h-100">
+                    <div class="university-image" style="background-color: #f0f0f0; display: flex; align-items: center; justify-content: center;">
+                        <h3><?php echo $university['name']; ?></h3>
                     </div>
-                    
-                    <div class="row mb-3">
-                        <div class="col-4">
-                            <div class="stat-label">Indian Students:</div>
-                            <div class="stat-value"><?php echo $university['indian_students']; ?></div>
+                    <div class="university-details">
+                        <h5 class="university-name"><?php echo $university['name']; ?></h5>
+                        <div class="university-country">
+                            <img src="assets/icons/<?php echo $university['flag']; ?>" alt="<?php echo $university['country']; ?>">
+                            <?php echo $university['country']; ?>
                         </div>
-                        <div class="col-4">
-                            <div class="stat-label">Course Duration:</div>
-                            <div class="stat-value"><?php echo $university['course_duration']; ?></div>
+                        
+                        <div class="row mb-3">
+                            <div class="col-4">
+                                <div class="stat-label">Indian Students:</div>
+                                <div class="stat-value"><?php echo $university['indian_students']; ?></div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-label">Course Duration:</div>
+                                <div class="stat-value"><?php echo $university['course_duration']; ?></div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-label">Ranking:</div>
+                                <div class="stat-value"><?php echo $university['ranking']; ?></div>
+                            </div>
                         </div>
-                        <div class="col-4">
-                            <div class="stat-label">Ranking:</div>
-                            <div class="stat-value"><?php echo $university['ranking']; ?></div>
+                        
+                        <div class="row mb-3">
+                            <div class="col-4">
+                                <div class="stat-label">Course Fee:</div>
+                                <div class="stat-value"><?php echo $university['course_fee']; ?></div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-label">Accommodation:</div>
+                                <div class="stat-value"><?php echo $university['accommodation']; ?></div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-label">Food:</div>
+                                <div class="stat-value"><?php echo $university['food']; ?></div>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="row mb-3">
-                        <div class="col-4">
-                            <div class="stat-label">Course Fee:</div>
-                            <div class="stat-value"><?php echo $university['course_fee']; ?></div>
+                        
+                        <div class="text-center">
+                            <a href="#" class="btn btn-outline-success">Get More Details</a>
                         </div>
-                        <div class="col-4">
-                            <div class="stat-label">Accommodation:</div>
-                            <div class="stat-value"><?php echo $university['accommodation']; ?></div>
-                        </div>
-                        <div class="col-4">
-                            <div class="stat-label">Food:</div>
-                            <div class="stat-value"><?php echo $university['food']; ?></div>
-                        </div>
-                    </div>
-                    
-                    <div class="text-center">
-                        <a href="#" class="btn btn-outline-success">Get More Details</a>
                     </div>
                 </div>
             </div>
+            <?php endforeach; ?>
         </div>
-        <?php endforeach; ?>
+
     </div>
     
-    <div class="text-center mt-4">
-        <a href="index.php" class="btn btn-outline-secondary">Start New Search</a>
-    </div>
 </div>
 
 <?php include 'includes/footer.php'; ?>
