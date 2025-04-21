@@ -33,13 +33,10 @@ if (isset($_GET['logout'])) {
 // Get submissions from database
 $submissions = [];
 if ($is_logged_in) {
-    $result = $conn->query("SELECT * FROM submissions ORDER BY created_at DESC");
-    if ($result->num_rows > 0) {
-        while($row = $result->fetch_assoc()) {
-            $submissions[] = $row;
-        }
-    }
+    $stmt = $conn->query("SELECT * FROM submissions ORDER BY created_at DESC");
+    $submissions = $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
+
 
 ?>
 <!DOCTYPE html>
