@@ -81,7 +81,7 @@ if ($country == 'Georgia') {
                 'name' => 'Tbilisi State Medical University',
                 'country' => 'Georgia',
                 'flag' => 'georgia.svg',
-                'img' => 'https://via.placeholder.com/600x350?text=Tbilisi+State+Medical+University',
+                'img' => '/assets/university/tibilisi.png',
                 'ranking' => '6820',
                 'indian_students' => '600',
                 'course_duration' => '6 years',
