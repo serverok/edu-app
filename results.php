@@ -25,7 +25,7 @@ if ($country == 'India' || $country == 'Russia' || $country == 'Uzbekistan') {
                 'name' => 'Tashkent Medical Academy',
                 'country' => 'Uzbekistan',
                 'flag' => 'uzbekistan.svg',
-                'img' => 'https://via.placeholder.com/600x350?text=Tashkent+Medical+Academy',
+                'img' => '/assets/university/tashkent.png',
                 'ranking' => '4662',
                 'indian_students' => '300',
                 'course_duration' => '6 years',
