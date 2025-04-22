@@ -107,7 +107,12 @@ if ($is_logged_in) {
                     <h2>Edu<span class="text-success">Cart</span> Admin Dashboard</h2>
                     <a href="?logout=1" class="btn btn-outline-danger"><i class="fas fa-sign-out-alt"></i> Logout</a>
                 </div>
-                
+                <?php if (isset($_SESSION['message'])): ?>
+                    <div class="alert alert-<?php echo $_SESSION['message_type']; ?>">
+                        <?php echo $_SESSION['message']; ?>
+                        <?php unset($_SESSION['message']); unset($_SESSION['message_type']); ?>
+                    </div>
+                <?php endif; ?>
                 <div class="card mb-4">
                     <div class="card-header bg-success text-white">
                         <h5 class="mb-0">Form Submissions</h5>
@@ -127,6 +132,7 @@ if ($is_logged_in) {
                                             <th>Country</th>
                                             <th>Budget</th>
                                             <th>Date</th>
+                                            <th>Delete</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -141,6 +147,7 @@ if ($is_logged_in) {
                                                 <td><?php echo htmlspecialchars($submission['country']); ?></td>
                                                 <td><?php echo htmlspecialchars($submission['budget']); ?></td>
                                                 <td><?php echo date('M d, Y H:i', strtotime($submission['created_at'])); ?></td>
+                                                <td><a href="delete_submission.php?id=<?php echo $submission['id']; ?>" class="btn btn-danger btn-sm">Delete</a></td>
                                             </tr>
                                         <?php endforeach; ?>
                                     </tbody>
